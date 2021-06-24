@@ -21,6 +21,11 @@ export default function Topbar() {
           <div className="topbarIconContainer">
             <Settings />
           </div>
+          <img
+            src="https://images.pexels.com/photos/1895915/pexels-photo-1895915.jpeg?cs=srgb&dl=pexels-wellington-cunha-1895915.jpg&fm=jpg"
+            alt=""
+            className="topAvatar"
+          />
         </div>
       </div>
     </div>
