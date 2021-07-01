@@ -8,7 +8,7 @@ export default function WidgetSm() {
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/937658/pexels-photo-937658.jpeg?cs=srgb&dl=pexels-lena-hsvl-937658.jpg&fm=jpg"
+            src="https://images.pexels.com/photos/428034/pexels-photo-428034.jpeg?cs=srgb&dl=pexels-cristian-ismael-mart%C3%ADnez-nieto-428034.jpg&fm=jpg"
             alt=""
             className="widgetSmImg"
           />
@@ -17,14 +17,14 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <Visibility />
+            <Visibility className="widgetSmIcon" />
             Display
           </button>
         </li>
 
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/937658/pexels-photo-937658.jpeg?cs=srgb&dl=pexels-lena-hsvl-937658.jpg&fm=jpg"
+            src="https://images.pexels.com/photos/428034/pexels-photo-428034.jpeg?cs=srgb&dl=pexels-cristian-ismael-mart%C3%ADnez-nieto-428034.jpg&fm=jpg"
             alt=""
             className="widgetSmImg"
           />
@@ -33,14 +33,14 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <Visibility />
+            <Visibility className="widgetSmIcon" />
             Display
           </button>
         </li>
 
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/937658/pexels-photo-937658.jpeg?cs=srgb&dl=pexels-lena-hsvl-937658.jpg&fm=jpg"
+            src="https://images.pexels.com/photos/428034/pexels-photo-428034.jpeg?cs=srgb&dl=pexels-cristian-ismael-mart%C3%ADnez-nieto-428034.jpg&fm=jpg"
             alt=""
             className="widgetSmImg"
           />
@@ -49,14 +49,14 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <Visibility />
+            <Visibility className="widgetSmIcon" />
             Display
           </button>
         </li>
 
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/937658/pexels-photo-937658.jpeg?cs=srgb&dl=pexels-lena-hsvl-937658.jpg&fm=jpg"
+            src="https://images.pexels.com/photos/428034/pexels-photo-428034.jpeg?cs=srgb&dl=pexels-cristian-ismael-mart%C3%ADnez-nieto-428034.jpg&fm=jpg"
             alt=""
             className="widgetSmImg"
           />
@@ -65,14 +65,14 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <Visibility />
+            <Visibility className="widgetSmIcon" />
             Display
           </button>
         </li>
 
         <li className="widgetSmListItem">
           <img
-            src="https://images.pexels.com/photos/937658/pexels-photo-937658.jpeg?cs=srgb&dl=pexels-lena-hsvl-937658.jpg&fm=jpg"
+            src="https://images.pexels.com/photos/428034/pexels-photo-428034.jpeg?cs=srgb&dl=pexels-cristian-ismael-mart%C3%ADnez-nieto-428034.jpg&fm=jpg"
             alt=""
             className="widgetSmImg"
           />
@@ -81,7 +81,7 @@ export default function WidgetSm() {
             <span className="widgetSmUserTitle">Software Engineer</span>
           </div>
           <button className="widgetSmButton">
-            <Visibility />
+            <Visibility className="widgetSmIcon" />
             Display
           </button>
         </li>
