@@ -2,6 +2,8 @@ import "./Home.css";
 import FeaturedInfo from "../featuredInfo/FeaturedInfo";
 import Chart from "../chart/Chart";
 import { userData } from "../../dummyData";
+import WidgetSm from "../WidgetSm/WidgetSm";
+import WidgetLg from "../WidgetLg/WidgetLg";
 
 export default function Home() {
   return (
@@ -13,6 +15,10 @@ export default function Home() {
         grid
         dataKey="Active User"
       />
+      <div className="homeWidget">
+        <WidgetSm />
+        <WidgetLg />
+      </div>
     </div>
   );
 }
