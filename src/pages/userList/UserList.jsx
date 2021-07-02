@@ -1,5 +1,6 @@
 import "./UserList.css";
 import { DataGrid } from "@material-ui/data-grid";
+import { DeleteOutline } from "@material-ui/icons";
 
 export default function UserList() {
   const columns = [
@@ -27,6 +28,19 @@ export default function UserList() {
       field: "transaction",
       headerName: "Transaction Volume",
       width: 160,
+    },
+    {
+      field: "action",
+      headerName: "Action",
+      width: 150,
+      renderCell: (params) => {
+        return (
+          <>
+            <button className="userListEdit">Edit</button>
+            <DeleteOutline className="userListDelete" />
+          </>
+        );
+      },
     },
   ];
 
@@ -133,7 +147,13 @@ export default function UserList() {
   ];
   return (
     <div className="userList">
-      <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
+      <DataGrid
+        rows={rows}
+        disableSelectionOnClick
+        columns={columns}
+        pageSize={8}
+        checkboxSelection
+      />
     </div>
   );
 }
