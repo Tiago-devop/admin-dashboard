@@ -1,8 +1,17 @@
 import "./UserList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
+import { userRows } from "../../dummyData";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function UserList() {
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -36,119 +45,23 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <button className="userListEdit">Edit</button>
-            <DeleteOutline className="userListDelete" />
+            <Link to={"/user/" + params.row.id}>
+              <button className="userListEdit">Edit</button>
+            </Link>
+            <DeleteOutline
+              className="userListDelete"
+              onClick={() => handleDelete(params.row.id)}
+            />
           </>
         );
       },
     },
   ];
 
-  const rows = [
-    {
-      id: 1,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 2,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 3,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 4,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 5,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 6,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 7,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 8,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 9,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 10,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-    {
-      id: 11,
-      username: "Maria catrina",
-      avatar:
-        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
-      email: "Maria@gmail.com",
-      status: "active",
-      transaction: "$120.00",
-    },
-  ];
   return (
     <div className="userList">
       <DataGrid
-        rows={rows}
+        rows={data}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}

@@ -48,3 +48,105 @@ export const userData = [
     "Active User": 4000,
   },
 ];
+
+export const userRows = [
+  {
+    id: 1,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 2,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 3,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 4,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 5,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 6,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 7,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 8,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 9,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 10,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+  {
+    id: 11,
+    username: "Maria catrina",
+    avatar:
+      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?cs=srgb&dl=pexels-moose-photos-1036623.jpg&fm=jpg",
+    email: "Maria@gmail.com",
+    status: "active",
+    transaction: "$120.00",
+  },
+];
