@@ -71,7 +71,7 @@
 .userShowTitle {
   font-size: 14px;
   font-weight: 600;
-  color: rgb(175, 170, 170)
+  color: rgb(175, 170, 170);
 }
 
 .userShowInfo {
@@ -106,6 +106,29 @@
   margin-top: 10px;
 }
 
+.userUpdateItem > label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.userUpdateInput {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
+
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userUpdateUpload {
+  display: flex;
+  align-items: center;
+}
+
 .userUpdateImg {
   width: 100px;
   height: 100px;
@@ -114,3 +137,16 @@
   margin-right: 20px;
 }
 
+.userUpdateIcon {
+  cursor: pointer;
+}
+
+.userUpdateButton {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+  font-weight: 600;
+}
